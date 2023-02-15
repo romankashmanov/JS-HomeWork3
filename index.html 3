@@ -1,0 +1,7 @@
+void foo(IntStream numbers) {
+  numbers.max().ifPresent(System.out::println);
+}
+ 
+final var scanner = new Scanner(System.in);
+final var numbers = IntStream.generate(scanner::nextInt).limit(3);
+foo(numbers);
