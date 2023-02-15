@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework3</title>
+</head>
+
+<body>
+  
+    <script>
+        "use strict";
+ function sum(a, b) {
+            return a + b;
+        }
+
+ function diff(a, b) {
+            if (a > b) {
+                return a - b;
+            }
+            return b - a;
+        }
+
+        
+        function mul(a, b) {
+            return a * b;
+        }
+
+        
+        function div(a, b) {
+            return a / b;
+        }
+
+        const numberA = +prompt(`Введите число А: `);
+        const numberB = +prompt(`Введите число B: `);
+        alert(`Сумма числел А и В: ${sum(numberA, numberB)}`);
+        alert(`Разность числел А и В: ${diff(numberA, numberB)}`);
+        alert(`Произведение числел А и В: ${mul(numberA, numberB)}`);
+        alert(`Деление числел А и В: ${div(numberA, numberB)}`);
+    </script>
+</body>
+
+</html>
